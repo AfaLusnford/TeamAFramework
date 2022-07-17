@@ -1,18 +1,10 @@
-<suite name = "DataTest" parallel = "methods" data-provider-thread-count="">
+<suite name = "DataTest" parallel = "methods" data-provider-thread-count="5">
 
     <test name = "testParallel">
-
-
-
 
       <classes>
 
           <class name ="com.Delta.Sprint3TeamA.AsifSprint3"/>
-
-
-
-
-
 
 
 

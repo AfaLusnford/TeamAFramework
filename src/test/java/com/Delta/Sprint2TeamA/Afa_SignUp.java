@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 public class Afa_SignUp extends BaseClass2 {
 
 @Test
-
     public void SignUpWithFirstAndLastname(){
 
 
@@ -223,8 +222,11 @@ public void createUsernameAndPassword(){
         sign.ClickOnConfirmEmail.click();
         sign.ClickOnConfirmEmail.sendKeys(email);
         sign.ClickOnNext.click();
+        sign.clickOnUsernameBox.click();
+
         SeleniumUtils.waitFor(2);
         SeleniumUtils.jsClick(sign.clickOnUsernameBox);
+
         sign.clickOnUsernameBox.sendKeys(fake.name().username());
         sign.clickOnPassword.click();
         String pass= fake.internet().password(8, 15);

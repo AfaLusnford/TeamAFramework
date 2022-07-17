@@ -66,7 +66,7 @@ public class BaseClass3 {
             logger.addScreenCaptureFromPath(screenshotFilePath);
         }
 
-        Driver.quitDriver();
+        //Driver.quitDriver();
 
     }
     @AfterSuite(alwaysRun = true)

@@ -1,0 +1,38 @@
+<suite name="Frame">
+
+    <test name="Delta">
+
+        <groups>
+          <run>
+
+             <include name="smoke" />
+
+          </run>
+
+
+     <classes>
+
+         <class name="TeamFramework.AfasUserStory"/>
+         <class name="TeamFramework.Halil"/>
+         <class name="TeamFramework.Rahims_class"/>
+         <class name="TeamFramework.LyleUserStory"/>
+         <class name="TeamFramework.VafasTest_Cases"/>
+         <class name="TeamFramework.AH_testcases"/>
+
+     </classes>
+
+
+        </groups>
+
+
+
+
+
+    </test>
+
+
+
+
+
+
+</suite>
