@@ -62,7 +62,6 @@ public class AsifSprint3 extends BaseClass3{
     public void SelectAAdditionalOptions() {
 
         ShopHotelsAsif hotels = new ShopHotelsAsif();
-
         Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         logger.info("click on shop hotels button");
@@ -104,26 +103,7 @@ public class AsifSprint3 extends BaseClass3{
 
     }
 
-    @Test(dataProvider = "getData")
 
-    public void clickOnUserAndPassword(String  username,String lastname, String password){
-
-        ShopHotelsAsif hotels = new ShopHotelsAsif();
-
-        Driver.getDriver().get(ConfigReader.getProperty("url1"));
-        SeleniumUtils.jsClick(hotels.clickOnLogIn);
-        Driver.getDriver().findElement(By.xpath("//input[@id='userId']")).sendKeys(username, Keys.TAB,lastname, Keys.TAB, password, Keys.ENTER);
-//        hotels.assertion();
-
-    }
-
-    @DataProvider
-
-    public Object[][]  getData(){
-
-        return CSVReader.readFromCSV("src/test/java/MOCK_DATA.csv");
-
-        };
 
 
     }
